@@ -1,4 +1,4 @@
-# Jailfox 
+# Jailwolf
 
 [BastilleBSD](https://bastillebsd.org) template to bootstrap Firefox.
 
@@ -6,26 +6,26 @@
 
 When applied to a container, this template will install with dependencies
  
-- firefox 
+- icewolf 
 - noto fonts ( All the glyphs for the modern web )
 - xauth
 - mesa-dri ( 3D Support if available )
-- add user `firefox` 
+- add user `icewolf` 
 - gives access to the socket `/tmp/.X11-unix/:0=` from inside the jail.
 
 This all adds up to a container size of: **~1.8 Gigabyte**
 
-To run the jailed firefox from the host system please visit 
-[jailfox-install](https://github.com/ddowse/jailfox-install) for further instructions.
+To run the jailed icewolf from the host system please visit 
+[jailwolf-install](https://github.com/sawyerville/jailwolf-install) for further instructions.
 
 ## Bootstrap
 ```shell
-bastille bootstrap https://github.com/ddowse/jailfox 
+bastille bootstrap https://github.com/ddowse/jailwolf
 ```
 
 ## Apply
 ```shell
-bastille template TARGET ddowse/jailfox [ --arg WITH_USB=1 ] [ --arg WITH_3D=1  ]
+bastille template TARGET sawyerville/jailwolf [ --arg WITH_USB=1 ] [ --arg WITH_3D=1  ]
 ```
 The arguments `WITH_3D` and `WITH_USB` are stricly optional. But if you decide
 to use them. You have add some rules to `/etc/devfs.rules`, some rules that i
@@ -73,11 +73,11 @@ bastille restart TARGET
 
 Go to `Settings` scroll down then **Uncheck** "Use recommended performance settings".   
 
-![Firefox Settings](ff-performance.png)
+![Icewolf Settings](ff-performance.png)
 
 Open `about:config` and set `gfx.webrender.all` to `true`
 
-Restart Firefox
+Restart Icewolf
 
 ## Hint
 
