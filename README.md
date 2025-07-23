@@ -6,16 +6,16 @@
 
 When applied to a container, this template will install with dependencies
  
-- icewolf 
+- librewolf 
 - noto fonts ( All the glyphs for the modern web )
 - xauth
 - mesa-dri ( 3D Support if available )
-- add user `icewolf` 
+- add user `librewolf` 
 - gives access to the socket `/tmp/.X11-unix/:0=` from inside the jail.
 
 This all adds up to a container size of: **~1.8 Gigabyte**
 
-To run the jailed icewolf from the host system please visit 
+To run the jailed librewolf from the host system please visit 
 [jailwolf-install](https://github.com/sawyerville/jailwolf-install) for further instructions.
 
 ## Bootstrap
@@ -73,11 +73,11 @@ bastille restart TARGET
 
 Go to `Settings` scroll down then **Uncheck** "Use recommended performance settings".   
 
-![Icewolf Settings](ff-performance.png)
+![Librewolf Settings](ff-performance.png)
 
 Open `about:config` and set `gfx.webrender.all` to `true`
 
-Restart Icewolf
+Restart Librewolf
 
 ## Hint
 
