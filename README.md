@@ -1,6 +1,6 @@
 # Jailwolf
 
-[BastilleBSD](https://bastillebsd.org) template to bootstrap Firefox.
+[BastilleBSD](https://bastillebsd.org) template to bootstrap Librewolf.
 
 ## Description
 
