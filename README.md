@@ -20,7 +20,7 @@ To run the jailed librewolf from the host system please visit
 
 ## Bootstrap
 ```shell
-bastille bootstrap https://github.com/ddowse/jailwolf
+bastille bootstrap https://github.com/sawyerville/jailwolf
 ```
 
 ## Apply
